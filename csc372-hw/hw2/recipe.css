@@ -1,0 +1,54 @@
+/* Stylesheet associated with pie.html*/
+body {
+    color: #404040;
+
+    background-image: url('silverware.jpg');
+    background-attachment: fixed;
+
+    font-family: 'Georgia', 'Garamond', serif;
+    font-size: 11pt;
+}
+
+h1, h2 {
+    color: #A4A400;
+    background-color: #F0F0F0;
+
+    font-family: 'Lucida Sans Unicode', 'Helvetica', 'Arial', sans-serif;
+
+    text-decoration: underline;
+
+    display: inline-block;
+}
+
+h1 {
+    text-align: center;
+    font-size: 22pt;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: left;
+    font-size: 18pt;
+    font-weight: normal;
+}
+
+a {
+    color: #A4A400;
+}
+
+blockquote {
+    background-color: #FFFFA8;
+    padding: 0px;
+    margin: 10px 0;
+    font-style: italic;
+    margin-left: 45px;
+}
+
+ul {
+    list-style: url('pie_icon.gif');
+}
+
+#image {
+    display: block;
+    margin-left: 0;
+}

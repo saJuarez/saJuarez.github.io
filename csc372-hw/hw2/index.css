@@ -1,0 +1,50 @@
+/* Stylesheet associated with index.html.*/
+body {
+    color: #404040;
+    background-color: #fff7e6;
+
+    font-family: 'Georgia', 'Garamond', serif;
+    font-size: 11pt;
+}
+
+header, footer {
+    color: #fff;
+    background-color: #a4a400;
+
+    text-align: center;
+
+    padding: 50px 0;
+}
+
+header {
+    font-size:200% ;
+    font-weight: bold;
+
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 80%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #404040;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 18pt;
+    font-weight: normal;
+}
