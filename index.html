@@ -1,0 +1,79 @@
+git init<!DOCTYPE html>
+<!--
+  Name: Saul Juarez
+  Date: 9/15/2024
+  CSC 372-01
+
+  This is the prototype home page for the Spartan Speed Shop website. It contains various html 
+  elements such as a header, tool bar/navigation bar, a search field, a splash section, etc. 
+-->
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <title>Spartan Speed Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="logo-container">
+                <a href="index.html">
+                    <img id="logo" src="images/icons/logo.png" alt="Spartan Speed Shop Logo">
+                </a>
+            </div>
+            
+            <nav id="nav-controls">
+                <a href="products.html" class="menu-button">All</a>
+                <a href="#" class="menu-button">Suspension</a>
+                <a href="#" class="menu-button">Wheels</a>
+                <a href="#" class="menu-button">Braking</a>
+            </nav>
+
+            <div id="search-field">
+                <input type="text" placeholder="Search...">
+                <button id="search-button">
+                    <img id="search-icon" src="images/icons/magnifying-glass.png" alt="Search">
+                </button>
+            </div>
+
+            <div id="icon-container">
+                <img src="images/icons/account-icon.png" alt="Account" class="icon">
+                <img src="images/icons/shopping-cart.png" alt="Cart" class="icon">
+            </div>
+        </header>
+
+        <section  id="splash-container">
+            <div id="splash-content">
+                <div id="splash-text">
+                    <img src="images/home-page/sss-title.png" alt="Spartan Speed Shop Title" id="title">
+                    <h3>Browse the Speed Shop's assortment of OEM+ and aftermarket performance parts
+                    </h3>
+                    <button id="products-button">View Products</button>
+                </div>
+                <div id="splash-image">
+                    <a href="product-page.html">
+                        <img src="images/home-page/enginebay.jpg" alt="Featured Product">
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <div id="footer-content">
+                <div id="social-icons">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="images/icons/facebook-icon.png" alt="Facebook icon">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="images/icons/instagram-icon.png" alt="Instagram icon">
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <img src="images/icons/x-icon.png" alt="X icon">
+                    </a>
+                </div>
+                <p>&copy; 2024 Spartan Speed Shop</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
