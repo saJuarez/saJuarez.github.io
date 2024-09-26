@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <!--
   Name: Saul Juarez
-  Date: 9/25/2024
+  Date: 09/25/2024
   CSC 372-01
 
- This is the index page for a mock-up blog food & drinks website. It includes features such as a 
- header articles, images, various javascript elements, etc.
+This is the index page for a food and drinks blog themed around nearby eateries around campus. The 
+page includes a header, footer, aside, event listeners, etc. 
 -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,40 +17,116 @@
 </head>
 
 <body>
-    <div class="container">
+    <div id="page-container">
         <header>
-            <div class="header-background">
-                <img src="images/logo.png" alt="Spartan Food Finder Logo" class="logo">
-                <div class="header-text">
-                    <h1>Spartan Food Finder</h1>
-                    <h3>Finding The Freshest Local Eats Around Campus!</h3>
-                </div>
+            <img src="images/logo.png" alt="Spartan Food Finder Logo" class="logo">
+            <div id="header-text">
+                <h1>Spartan Food Finder</h1>
+                <h3>Finding The Freshest Local Eats Around Campus!</h3>
             </div>
         </header>
-
+        
         <main>
-            <section class="introduction">
+            <section id="introduction">
                 <h2>Attention Hungry Spartans!</h2>
                 <p>Are you growing tired of visiting the cafe everyday? Looking for the perfect 
-                    dinner spot within walking distance of campus? Well look no further! Here at 
-                    Spartan Food Finder, we bring you a weekly catalog of various food & drink 
-                    recommendations within walking distance of campus. Visit our meal plan builder 
-                    to plan out your dinner outings for the week!</p>
+                    lunch or dinner spot within walking distance of campus? Well look no further! 
+                    Here at Spartan Food Finder, we bring you a weekly catalog of various food & 
+                    drink recommendations. Visit our meal plan builder to help you plan out some
+                    meals for the week!</p>
             </section>
 
-            <section class="articles">
-                <article class="article-preview" id="article1">
+            <section id="articles">
+                <article class="article-preview" id="article-1">
                     <div class="article-content">
-                        <img src="images/don.jpg" alt="Don Japanese Restaurant" class="article-image">
+                        <div class="displaying-image">
+                            <img src="images/don-images/don.jpg" alt="Don Japanese Restaurant" class="article-image main-image" data-description-id="don-desc">
+
+                            <div class="thumbnail-container">
+                                <img src="images/don-images/fried-gyoza.jpeg" alt="Food 1" class="thumbnail" data-description-id="gyoza-desc">
+                                <img src="images/don-images/ramen.jpeg" alt="Food 2" class="thumbnail" data-description-id="ramen-desc">
+                                <img src="images/don-images/chicken-rice-bowl.jpeg" alt="Food 3" class="thumbnail" data-description-id="chicken-rice-desc">
+                            </div>
+
+                            <div id="don-desc" style="display: none;">
+                                Don Japanese Restaurant is a great choice for lunch or dinner as 
+                                they offer a variety of authentic dishes. Not only is the food 
+                                superb, but the staff are very friendly and have done a good job 
+                                making a cozy and Japanese inspired setting within the restaurant. 
+                                With good food as well as a friendly and cozy atmosphere, Don is 
+                                sure to be your go-to Japanese restaurant when you're craving some 
+                                warm ramen.                            
+                            </div>
+                            <div id="gyoza-desc" style="display: none;">
+                                Don offers a delicious 6-piece serving of gyozas that can come 
+                                either fried or steamed. The dish comes with a ginger sauce(which 
+                                pairs very well with the fried option), though white sauce tends to 
+                                be the sauce of choice when considering these dumplings. These are 
+                                by far the best gyozas obtainable
+                                around campus!
+                            </div>
+                            <div id="ramen-desc" style="display: none;">
+                                There is quite the variety at Don when it comes to options of 
+                                traditional Japanese soup. Whether your a fan of spicy ramen or beef
+                                 udon, you're sure to find a bowl that will satisfy your cravings. 
+                                 Featured this week is a personal favorite- a bowl of shoyu ramen 
+                                 with chicken as it's protein.
+                            </div>
+                            <div id="chicken-rice-desc" style="display: none;">
+                                Fajitas aren't the only meal that's served sizzling! Don has a 
+                                selection of rice bowls to choose from. Bowls are served quite 
+                                literally out of the pot, so you're guaranteed a hot, tasty meal!
+                            </div>                            
+                        </div>
+
                         <div class="article-text">
-                            <h3>Don Japanese Restaurant</h3>
-                            <p>Don Japanese Restaurant offers a variety of authentic Japanese dishes, including sushi, ramen, and tempura. The cozy atmosphere and friendly staff make it a great place to enjoy a meal with friends or family.</p>
+                            <h3 id="article-title">Don Japanese Restaurant</h3> 
+                            <p id="description-text"></p>
                         </div>
                     </div>
                 </article>
-                <article>
-                    <h3>Article 2: Mouthwatering Sushi</h3>
-                    <p>Explore the top sushi spots that offer fresh and delicious sushi...</p>
+
+                <article class="article-preview" id="article-2">
+                    <div class="article-content">
+                        <div class="displaying-image">
+                            <img src="images/old-town-images/old-town.png" alt="Old Town Draught House" class="article-image main-image" data-description-id="old-town-desc">
+                            <div class="thumbnail-container">
+                                <img src="images/old-town-images/bbq-burger.jpeg" alt="Food 1" class="thumbnail" data-description-id="burger-desc">
+                                <img src="images/old-town-images/caesar-salad.jpeg" alt="Food 2" class="thumbnail" data-description-id="salad-desc">
+                                <img src="images/old-town-images/philly-cheesesteak.jpeg" alt="Food 3" class="thumbnail" data-description-id="philly-desc">
+                            </div>
+
+                            <div id="old-town-desc" style="display: none;">
+                                Old Town Draught House holds a special place in the hearts of many. 
+                                With daily drink specials, a friendly staff, and amazing pub food, 
+                                it's no wonder why this is a staple for many students and locals 
+                                alike! It's also worth notin that Old Town is practically a part of 
+                                campus, what with it's semi-centralized location on campus right 
+                                beside of Yum-Yum's and the Oakland parking deck.
+                            </div>
+                            <div id="burger-desc" style="display: none;">
+                                Old Town's signature Smokehouse Burger isn't for the feint of heart.
+                                This large sandwich is packed with beef, bacon, and(you guessed it) 
+                                barbecue sauce. As wrapped up as you'll be enjoying this burger, 
+                                remember to try and not make a mess of your shirt!
+                            </div>
+                            <div id="salad-desc" style="display: none;">
+                                Refreshing and light, Old Town's Caesar Salad is a great choice if 
+                                you're looking for a lighter meal. If you aren't, Old Town offers a 
+                                meal size option along with various protein to add(though chicken 
+                                and caesar salad is a to-die-for combo).
+                            </div>
+                            <div id="philly-desc" style="display: none;">
+                                A classic! Old Town provides a great take on the philly cheesesteak.  
+                            </div>
+                        </div>
+                        
+                        <div class="article-text">
+                            <h3 id="article-title">Old Town Draught House</h3> 
+                            <p id="description-text">
+                            </p>
+                        </div>
+                    </div>
                 </article>
             </section>
 
@@ -67,7 +144,6 @@
         </footer>
     </div>
 
-    <!-- Link to the JavaScript file -->
     <script src="index.js"></script>
 </body>
 </html>
