@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  Name: Saul Juarez
+  Date: 10/08/2024
+  CSC 372-01
+
+  This is the index.html page for a rock paper scissors game. The page emulates a game of rock, 
+  paper, scissors against the computer. The page demonstrates the use of timers, conditional logic,
+  event handling, etc.  
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors!</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>Rock, Paper, Scissors!</h1>
+        </header>
+
+        <section id="game-section">
+            <div id="player-section">
+                <div id="choices">
+                    <img src="images/rock.PNG" alt="Rock" id="rock" 
+                     onclick="playerChoice('rock')">
+                    <img src="images/paper.PNG" alt="Paper" id="paper" 
+                     onclick="playerChoice('paper')">
+                    <img src="images/scissors.PNG" alt="Scissors" id="scissors" 
+                     onclick="playerChoice('scissors')">
+                </div>
+                <h2>YOUR THROW</h2>
+            </div>
+
+            <div id="computer-section">
+                <img src="images/question-mark.PNG" alt="Computer choice" id="computer-choice">
+                <h2>COMPUTER THROW</h2>
+            </div>
+
+            <div id="outcome-section">
+                <h2>Results: <span id="outcome">Click to play</span></h2>
+            </div>
+        </section>
+
+        <section id="score-section">
+            <h2>Score</h2>
+            <p>Wins: <span id="wins">0</span></p>
+            <p>Losses: <span id="losses">0</span></p>
+            <p>Ties: <span id="ties">0</span></p>
+            <button onclick="resetScore()">Reset Score</button>
+        </section>
+    </div>
+
+    <script src="index.js" defer></script>
+</body>
+</html>

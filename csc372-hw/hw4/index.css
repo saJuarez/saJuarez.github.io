@@ -1,0 +1,71 @@
+/* Stylesheet for index.html */
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #5bd769;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4fb95b;
+}
+
+#container {
+    max-width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#choices img {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 30px;
+    border: 4px solid transparent; 
+    transition: border-color 0.3s, transform 0.3s; 
+}
+
+#choices img.selected {
+    border: 4px solid red; 
+}
+
+#choices img:hover {
+    border-color: red;
+    transform: scale(1.5); 
+}
+
+#player-section,
+#computer-section,
+#outcome-section {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #000000; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#computer-section img {
+    border: 4px solid blue;
+    border-radius: 30px; 
+}
+
+#score-section {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #000000; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#score-section {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
