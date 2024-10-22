@@ -1,0 +1,89 @@
+/* Stylesheet for index.html */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Styling for the search box and button */
+#search {
+    width: 300px;              
+    padding: 10px;            
+    font-size: 16px;         
+    border: 2px solid #ccc;    
+    border-radius: 10px;      
+    outline: none;
+    transition: border-color 0.3s ease; 
+}
+
+#search:focus {
+    border-color: #007bff;
+}
+
+#search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; 
+}
+
+#search-btn {
+    background-color: #007bff; 
+    color: white;            
+    border: none;             
+    padding: 10px 20px;       
+    font-size: 16px;           
+    border-radius: 10px;      
+    cursor: pointer;           
+    margin-left: 10px;        
+    transition: background-color 0.3s ease; 
+}
+
+#search-btn:hover {
+    background-color: #0056b3; 
+}
+
+/* Styling for gallery and repo containers */
+#gallery {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%; 
+}
+
+.repo-container {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; 
+    box-sizing: border-box;
+}
+
+.repo-container:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #e9e9e9; 
+}
+
+.repo-container h2 {
+    margin: 0;
+}
+
+.repo-container p {
+    margin: 5px 0;
+}
